@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+#hm tbody tr:nth-child(1) td table{
+  display: none;
+}
+
+:root {
+  --main-color: blue;
+  --nav-backGround: #9391912b;
+  --logo-color: #19f4d9;
+  --logo-bg-color: #1f2121;
+  --text-color: #efefef;
+}
+
+html {
+  font-family: 'inter', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+.s-e {
+  justify-content: space-evenly;
+}
+
+.s-b{
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.columns-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.columns-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.columns-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.columns-5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.row-1 {
+  grid-template-rows: 1fr;
+}
+
+.row-2 {
+  grid-template-rows: 1fr 1fr;
+}
+
+
+
+.p-20 {
+  padding: 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.p-r {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
