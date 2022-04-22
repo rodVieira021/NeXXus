@@ -15,7 +15,7 @@ btnDark.addEventListener('click', function () {
 });
 
 window.onscroll = () => {
-  if (window.scrollY >= 200) {
+  if (window.scrollY >= 100) {
     navTrack.style.backgroundColor = '#1f2121';
     navTrack.style.transition = '0.5s';
   } else {
