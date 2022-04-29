@@ -3,6 +3,10 @@
 const btnLight = document.querySelector('.btn-light');
 const btnDark = document.querySelector('.btn-dark');
 const navTrack = document.querySelector('.nav-header');
+const modalMenu = document.querySelector('.menu-right')
+const modal = document.querySelector('.modal')
+
+
 
 btnLight.addEventListener('click', function () {
   btnLight.style.display = 'none';
@@ -14,6 +18,10 @@ btnDark.addEventListener('click', function () {
   btnDark.style.display = 'none';
 });
 
+modalMenu.addEventListener('click', function(){
+  modal.classList.add('modal-show')
+})
+
 window.onscroll = () => {
   if (window.scrollY >= 100) {
     navTrack.style.backgroundColor = '#1f2121';
@@ -24,3 +32,6 @@ window.onscroll = () => {
     navTrack.style.transition = '0.5s';
   }
 };
+
+//menu-right
+

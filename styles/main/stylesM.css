@@ -2,6 +2,9 @@
   position: relative;
 } */
 
+nav {
+  position: relative;
+}
 
 .nav-header {
   position: fixed;
@@ -14,12 +17,11 @@
   z-index: 9999999;
 }
 .nav-header span {
-  margin:0 30%;
+  margin: 0 30%;
 }
 
 .nav-ul {
-  gap: 15px;
-
+  gap: 30px;
 }
 .nav-ul a {
   text-decoration: none;
@@ -30,11 +32,38 @@
   gap: 15px;
 }
 
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35vw;
+  height: 100vh;
+  background-color: #fff;
+  transform: translateX(1000px);
+  transition: 0.5s ease-in-out;
+  z-index: 6;
+}
+
+.modal-show {
+  transform: translateX(0px);
+  backdrop-filter: blur(5px);
+}
+.sp--modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
 .hero {
   position: relative;
   top: 0;
   left: 0;
-  background-image: url('/img/nav-hero2.jpg');
+  background-image: url("/img/nav-hero2.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,7 +86,6 @@
   font-size: 50px;
   font-weight: 700;
 }
-
 
 .icon-btn {
   padding: 7px;
@@ -104,6 +132,3 @@ h3,
 p {
   padding: 15px 10px;
 }
-
-
-
