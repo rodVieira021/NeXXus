@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 .nav-header {
   position: fixed;
@@ -25,7 +26,7 @@ body {
   transition: 0.5s;
 }
 
-.nav-ul a:hover{
+.nav-ul a:hover {
   border-bottom: 2px solid var(--logo-color);
 }
 
@@ -98,7 +99,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  background-image: url("/img/nav-hero3.jpg");
+  background-image: url("/img/nav-hero2.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,7 +138,8 @@ body {
   color: #000;
 }
 
-/* FEATURES GRID */
+/* SECTION 1 GRID */
+
 .sec-1 {
   background-color: var(--nav-backGround);
 }
@@ -171,4 +173,28 @@ body {
 h3,
 p {
   padding: 15px 10px;
+}
+
+/* SECTION 2 */
+
+.sec-2 {
+  background-color: var(--nav-backGround);
+}
+
+.sec-2--img-1 {
+  background-image: url("/img/sections/sec-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.sec-2--img-2 {
+  background-image: url("/img/sections/sec-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
 }
