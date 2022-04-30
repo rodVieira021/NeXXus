@@ -6,7 +6,7 @@ const navTrack = document.querySelector(".nav-header");
 const sliderMenu = document.querySelector(".slider-menu");
 const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".btn-close--m");
-const blur = document.querySelector(".blur");
+const overlay = document.querySelector(".overlay");
 
 btnLight.addEventListener("click", function () {
   btnLight.style.display = "none";
@@ -21,16 +21,16 @@ btnDark.addEventListener("click", function () {
 sliderMenu.addEventListener("click", function (e) {
   e.preventDefault();
   modal.classList.add("modal-show");
-  blur.classList.add("blur-on");
+  overlay.classList.remove("hidden");
 });
 
 closeModal.addEventListener("click", function () {
   modal.classList.remove("modal-show");
-  blur.classList.remove("blur-on");
+  overlay.classList.add("hidden");
 });
 
 window.onscroll = () => {
-  if (window.scrollY >= 100) {
+  if (window.scrollY >= 15) {
     navTrack.style.backgroundColor = "#1f2121";
     navTrack.style.transition = "0.5s";
   } else {
