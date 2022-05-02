@@ -39,3 +39,6 @@ window.onscroll = () => {
     navTrack.style.transition = "0.5s";
   }
 };
+
+
+//
