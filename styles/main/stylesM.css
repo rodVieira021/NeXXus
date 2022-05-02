@@ -170,8 +170,8 @@ body {
 }
 
 .features-box,
-h3,
-p {
+.features-box > h3,
+.features-box > p {
   padding: 15px 10px;
 }
 
@@ -179,6 +179,7 @@ p {
 
 .sec-2 {
   background-color: var(--nav-backGround);
+  row-gap: 150px;
 }
 
 .sec-2--img-1 {
@@ -190,6 +191,14 @@ p {
   height: 500px;
 }
 
+.sec-2--first,
+.sec-2--second,
+.sec-2--img-1,
+.sec-2--img-2 {
+  justify-self: center;
+  align-self: center;
+}
+
 .sec-2--img-2 {
   background-image: url("/img/sections/sec-03.jpg");
   background-repeat: no-repeat;
@@ -197,4 +206,40 @@ p {
   background-size: cover;
   width: 500px;
   height: 500px;
+}
+
+.sec-2--first > h2,
+.sec-2--second > h2 {
+  color: rgb(6, 129, 63);
+  padding: 15px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+}
+
+.sec-2--first > h3,
+.sec-2--second > h3 {
+  padding: 20px 0;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.sec-2--first > p,
+.sec-2--second > p {
+  padding: 20px 0;
+  line-height: 1.5;
+}
+
+.sec-2--li,
+.sec-2--li-2 {
+  padding: 10px 0;
+}
+
+.sec-2--li-1::before,
+.sec-2--li-2::before {
+  content: "•";
+  color: rgb(6, 129, 63);
+  border-radius: 50%;
+  font-size: 25px;
+  margin-right: 5px;
 }
