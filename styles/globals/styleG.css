@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-#hm tbody tr:nth-child(1) td table{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+#hm tbody tr:nth-child(1) td table {
   display: none;
 }
 
@@ -9,10 +9,11 @@
   --logo-color: #19f4d9;
   --logo-bg-color: #1f2121;
   --text-color: #efefef;
+  --section-bg-color: #9391910b;
 }
 
 html {
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 .flex {
@@ -31,7 +32,7 @@ html {
   justify-content: space-evenly;
 }
 
-.s-b{
+.s-b {
   justify-content: space-between;
 }
 
@@ -62,8 +63,6 @@ html {
 .row-2 {
   grid-template-rows: 1fr 1fr;
 }
-
-
 
 .p-20 {
   padding: 20px;
