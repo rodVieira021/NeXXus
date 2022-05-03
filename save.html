@@ -1,0 +1,120 @@
+<!-- SECTION2 THAT WILL BE 3 -->
+
+<section class="sec-2 grid columns-2">
+    <div class="sec-2--img-1"></div>
+
+    <div class="sec-2--first">
+      <h2>Have perfect control</h2>
+      <h3>We bring solutions to make life easier for our customers.</h3>
+
+      <p>
+        Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
+        egestas eget quam. Praesent commodo cursus magna, vel scelerisque
+        nisl consectetur et. Vivamus sagittis lacus vel augue rutrum.
+      </p>
+
+      <ul>
+        <li class="sec-2--li-1">Aenean quam ornare. Curabitur blandit.</li>
+        <li class="sec-2--li-1">Nullam quis risus eget urna mollis ornare.
+        </li>
+        <li class="sec-2--li-1">Etiam porta euismod malesuada mollis.</li>
+        <li class="sec-2--li-1">Vivamus sagittis lacus vel augue rutrum.
+        </li>
+      </ul>
+    </div>
+
+    <div class="sec-2--second">
+      <h2>What makes us different?</h2>
+      <h3>We make spending stress free so you have the perfect control.</h3>
+
+      <p>
+        Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper
+        nulla non metus auctor fringilla. Morbi leo risus, porta ac
+        consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus.
+        Integer posuere erat a ante venenatis dapibus posuere velit.
+      </p>
+
+      <ul>
+        <li class="sec-2--li-2">Aenean eu leo quam. Pellentesque ornare</li>
+        <li class="sec-2--li-2">Nullam quis risus eget urna mollis ornare.
+        </li>
+        <li class="sec-2--li-2">Donec id elit non mi porta gravida at eget.
+        </li>
+      </ul>
+    </div>
+    <div class="sec-2--img-2"></div>
+  </section>
+
+
+
+  <!-- STYLES SECTION  -->
+<STYLE>
+  .sec-2 {
+    background-color: var(--nav-backGround);
+    row-gap: 150px;
+    padding: 0 50px;
+  }
+  
+  .sec-2--img-1 {
+    background-image: url("/img/sections/sec-02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    align-self: start;
+    justify-self: start;
+    border-radius: 6px;
+  }
+  
+  
+  
+  .sec-2--img-2 {
+    background-image: url("/img/sections/sec-03.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    justify-self: end;
+    align-self: center;
+    border-radius: 6px;
+  }
+  
+  .sec-2--first > h2,
+  .sec-2--second > h2 {
+    color: rgb(6, 129, 63);
+    padding: 15px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1.2px;
+  }
+  
+  .sec-2--first > h3,
+  .sec-2--second > h3 {
+    padding: 20px 0;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  
+  .sec-2--first > p,
+  .sec-2--second > p {
+    padding: 20px 0;
+    line-height: 1.5;
+  }
+  
+  .sec-2--li-1,
+  .sec-2--li-2 {
+    padding: 10px 0;
+  }
+  
+  .sec-2--li-1::before,
+  .sec-2--li-2::before {
+    content: "•";
+    color: rgb(6, 129, 63);
+    border-radius: 50%;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+</STYLE>

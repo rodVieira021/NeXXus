@@ -142,6 +142,7 @@ body {
 
 .sec-1 {
   background-color: var(--nav-backGround);
+  margin: 0 auto;
 }
 
 .sec-1-tittle {
@@ -151,6 +152,7 @@ body {
 .sec-1-tittle h2 {
   padding-top: 35px;
   font-size: 20px;
+  color: rgb(6, 129, 63);;
 }
 
 .sec-1-tittle h3 {
@@ -177,69 +179,3 @@ body {
 
 /* SECTION 2 */
 
-.sec-2 {
-  background-color: var(--nav-backGround);
-  row-gap: 150px;
-}
-
-.sec-2--img-1 {
-  background-image: url("/img/sections/sec-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 500px;
-  height: 500px;
-}
-
-.sec-2--first,
-.sec-2--second,
-.sec-2--img-1,
-.sec-2--img-2 {
-  justify-self: center;
-  align-self: center;
-}
-
-.sec-2--img-2 {
-  background-image: url("/img/sections/sec-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 500px;
-  height: 500px;
-}
-
-.sec-2--first > h2,
-.sec-2--second > h2 {
-  color: rgb(6, 129, 63);
-  padding: 15px 0;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: -1.2px;
-}
-
-.sec-2--first > h3,
-.sec-2--second > h3 {
-  padding: 20px 0;
-  font-size: 45px;
-  font-weight: 600;
-}
-
-.sec-2--first > p,
-.sec-2--second > p {
-  padding: 20px 0;
-  line-height: 1.5;
-}
-
-.sec-2--li,
-.sec-2--li-2 {
-  padding: 10px 0;
-}
-
-.sec-2--li-1::before,
-.sec-2--li-2::before {
-  content: "•";
-  color: rgb(6, 129, 63);
-  border-radius: 50%;
-  font-size: 25px;
-  margin-right: 5px;
-}
