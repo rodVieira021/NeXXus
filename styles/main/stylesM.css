@@ -282,3 +282,72 @@ body {
   padding: 20px 0px;
   line-height: 2;
 }
+
+/* SECTION 3 */
+
+.sec-3 {
+  background-color: var(--nav-backGround);
+  row-gap: 150px;
+  padding: 0 50px;
+}
+
+.sec-3--img-1 {
+  background-image: url("/img/sections/sec-03-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  align-self: start;
+  justify-self: start;
+  border-radius: 6px;
+}
+
+
+
+.sec-3--img-2 {
+  background-image: url("/img/sections/sec-03-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  justify-self: end;
+  align-self: center;
+  border-radius: 6px;
+}
+
+.sec-3--first-h2,
+.sec-3--second-h2 {
+  color: rgb(6, 129, 63);
+  padding: 15px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+}
+
+.sec-3--first-h3,
+.sec-3--second-h3 {
+  padding: 20px 0;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.sec-3--first-p,
+.sec-3--second-p {
+  padding: 20px 0;
+  line-height: 1.5;
+}
+
+.sec-3--li-1,
+.sec-3--li-2 {
+  padding: 10px 0;
+}
+
+.sec-3--li-1::before,
+.sec-3--li-2::before {
+  content: "•";
+  color: rgb(6, 129, 63);
+  font-size: 25px;
+  margin-right: 5px;
+}
