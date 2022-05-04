@@ -141,8 +141,8 @@ body {
 /* SECTION 1 GRID */
 
 .sec-1 {
-  background-color: var(--section-bg-color);
-  margin: 0 auto;
+  /* background-color: var(--section-bg-color); */
+  /* margin: 0 auto; */
 }
 
 .sec-1-tittle {
@@ -179,8 +179,8 @@ body {
 
 /* SECTION 2 */
 .sec-2 {
-  padding: 0 20px;
-  margin-top: 100px;
+  padding: 60px 20px;
+  /* padding-top: 100px; */
 }
 .sec-2--img-grid {
   justify-items: center;
@@ -256,11 +256,9 @@ body {
 }
 
 .sec-2--bottom {
-  background-color: var(--section-bg-color);
-  margin-top: 100px;
-  padding: 50px 20px;
+  padding: 80px 20px 50px 20px;
+  margin-top: 10px;
   gap: 50px;
-  width: 100%;
 }
 
 .sec-2--span {
@@ -286,9 +284,10 @@ body {
 /* SECTION 3 */
 
 .sec-3 {
-  background-color: var(--nav-backGround);
+  padding: 0 50px 60px 50px;
   row-gap: 150px;
-  padding: 0 50px;
+  grid-template-columns: 1fr 1fr;
+
 }
 
 .sec-3--img-1 {
@@ -298,7 +297,6 @@ body {
   background-size: cover;
   width: 500px;
   height: 500px;
-  align-self: start;
   justify-self: start;
   border-radius: 6px;
 }
@@ -311,8 +309,11 @@ body {
   width: 500px;
   height: 500px;
   justify-self: end;
-  align-self: center;
   border-radius: 6px;
+}
+
+.sec-3--first {
+
 }
 
 .sec-3--first-h2,
