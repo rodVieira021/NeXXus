@@ -2,6 +2,13 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+.sec-1,
+.sec-2,
+.sec-3 {
+  margin: 0 auto;
+  max-width: 1300px;
+}
 .nav-header {
   position: fixed;
   padding: 0 54px;
@@ -140,11 +147,6 @@ body {
 
 /* SECTION 1 GRID */
 
-.sec-1 {
-  /* background-color: var(--section-bg-color); */
-  /* margin: 0 auto; */
-}
-
 .sec-1-tittle {
   text-align: center;
   color: #000;
@@ -162,7 +164,8 @@ body {
 
 .features-container {
   padding: 100px 50px;
-  gap: 30px;
+  column-gap: 80px;
+  row-gap: 80px;
 }
 
 .features-box h3 {
@@ -183,7 +186,7 @@ body {
   /* padding-top: 100px; */
 }
 
-.sec-02--text{
+.sec-02--text {
   justify-self: center;
 }
 
@@ -201,7 +204,7 @@ body {
   height: 280px;
   width: 340px;
   border-radius: 6px;
-  justify-self: end;
+  align-self: end;
 }
 .img-2--grid {
   background-image: url("/img/sections/sec-2-img2.jpeg");
