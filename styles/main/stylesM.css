@@ -164,14 +164,19 @@ body {
 
 .features-container {
   padding: 100px 50px;
-  column-gap: 80px;
-  row-gap: 80px;
+  column-gap: 50px;
+  row-gap: 50px;
 }
 
 .features-box h3 {
   font-weight: 600;
   font-size: 20px;
-  padding-bottom: 20px;
+  margin-left: 20px;
+}
+
+.features-text{
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .features-box,
