@@ -7,6 +7,7 @@ const sliderMenu = document.querySelector(".slider-menu");
 const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".btn-close--m");
 const overlay = document.querySelector(".overlay");
+const navLinks = document.querySelectorAll(".nav-links");
 
 btnLight.addEventListener("click", function () {
   btnLight.style.display = "none";
@@ -29,6 +30,7 @@ closeModal.addEventListener("click", function () {
   overlay.classList.add("hidden");
 });
 
+// NAVBAR color change //
 window.onscroll = () => {
   if (window.scrollY >= 15) {
     navTrack.style.backgroundColor = "#1f2121";
@@ -40,4 +42,14 @@ window.onscroll = () => {
   }
 };
 
-//
+// SMOTH scroll Navigation menu//
+
+navLinks.forEach(function (el) {
+  el.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = this.getAttribute("href");
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});

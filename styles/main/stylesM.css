@@ -174,7 +174,7 @@ body {
   margin-left: 20px;
 }
 
-.features-text{
+.features-text {
   justify-content: flex-start;
   align-items: center;
 }
@@ -322,9 +322,6 @@ body {
   height: 500px;
   justify-self: end;
   border-radius: 6px;
-}
-
-.sec-3--first {
 }
 
 .sec-3--first-h2,
