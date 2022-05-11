@@ -53,3 +53,22 @@ navLinks.forEach(function (el) {
     });
   });
 });
+
+//Tabbed component
+
+const tabs = document.querySelectorAll("[data-btn-tab]");
+const tabsContainer = document.querySelectorAll(".sec-2-tabs--container");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
+    const clicked = document.querySelector(tab.dataset.btnTab);
+    tabsContainer.forEach((container) => {
+      container.classList.remove("active");
+    });
+    clicked.classList.add("active");
+  });
+});
+
+
+
+// finalize tabbed styles

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/reset/styleR.css" />
-    <link rel="stylesheet" href="styles/globals/styleG.css" />
     <link rel="stylesheet" href="styles/main/stylesM.css" />
+    <link rel="stylesheet" href="styles/globals/styleG.css" />
     <title>NeXXus</title>
   </head>
   <body>
@@ -186,27 +186,37 @@
           </div>
         </div>
 
-        <div class="sec-2--bottom flex">
-          <div class="sec-2--bottom1" id='vision'>
-            <h2 class="sec-2-bt--h2">Our Vision</h2>
-            <p class="sec-2-bt--p">
-              Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
-              porta gravida at eget. Fusce dapibus tellus.
-            </p>
+        <div class="sec-2--tabbed">
+          <div class="sec-2-btn--container flex">
+            <button class="sec-2-btn-tab" data-btn-tab="#vision">
+              Our Vision
+            </button>
+            <button class="sec-2-btn-tab" data-btn-tab="#mission">
+              Our Mission
+            </button>
+            <button class="sec-2-btn-tab" data-btn-tab="#values">
+              Our Values
+            </button>
           </div>
-          <div class="sec-2--bottom2" id='mission'>
-            <h2 class="sec-2-bt--h2">Our Mission</h2>
-            <p class="sec-2-bt--p">
-              Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel
-              augue laoreet. Sed posuere consectetur.
-            </p>
-          </div>
-          <div class="sec-2--bottom3" id='values'>
-            <h2 class="sec-2-bt--h2">Our Values</h2>
-            <p class="sec-2-bt--p">
-              Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-              Praesent commodo cursus magna scelerisque.
-            </p>
+          <div class="sec-2--bottom active flex">
+            <div class="sec-2-tabs--container active" id="vision">
+              <p class="sec-2-bt--p">
+                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+                porta gravida at eget. Fusce dapibus tellus.
+              </p>
+            </div>
+            <div class="sec-2-tabs--container" id="mission">
+              <p class="sec-2-bt--p">
+                Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel
+                augue laoreet. Sed posuere consectetur.
+              </p>
+            </div>
+            <div class="sec-2-tabs--container" id="values">
+              <p class="sec-2-bt--p">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Praesent commodo cursus magna scelerisque.
+              </p>
+            </div>
           </div>
         </div>
       </section>
