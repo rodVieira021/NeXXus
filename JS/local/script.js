@@ -30,7 +30,7 @@ closeModal.addEventListener("click", function () {
   overlay.classList.add("hidden");
 });
 
-// NAVBAR color change //
+// NAVBAR color change/body blur //
 window.onscroll = () => {
   if (window.scrollY >= 15) {
     navTrack.style.backgroundColor = "#1f2121";
@@ -42,7 +42,7 @@ window.onscroll = () => {
   }
 };
 
-// SMOTH scroll Navigation menu//
+// SMOOTH scroll Navigation menu//
 
 navLinks.forEach(function (el) {
   el.addEventListener("click", function (e) {
