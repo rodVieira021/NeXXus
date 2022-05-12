@@ -242,7 +242,6 @@ body {
   text-transform: uppercase;
   letter-spacing: -1.2px;
 }
-
 .sec-2--h3 {
   padding: 20px 35px;
   font-size: 45px;
@@ -272,17 +271,19 @@ body {
   padding: 0px 20px 50px 20px;
   margin-top: 10px;
   gap: 50px;
-  background-color: #efefef;
 }
 
 .sec-2-btn--container {
   justify-content: space-evenly;
   margin-top: 60px;
   gap: 150px;
+  border-top: 1px solid rgba(128, 128, 128, 0.18);
 }
 
 .sec-2-btn-tab {
-  color: #000;
+  position: relative;
+  top: -27px;
+  color: rgb(6, 129, 63);
   border: none;
   padding: 15px 30px;
   border-radius: 50px;
@@ -291,14 +292,37 @@ body {
   letter-spacing: -1.2px;
 }
 
+.sec-2--tabbed {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+}
+
+.btn-active {
+  position: relative;
+  top: -37px;
+  color: #fff;
+  background-color: rgb(6, 129, 63);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  
+}
+
+.sec-2-btn-tab:hover{
+  cursor: pointer;
+
+}
+
 .sec-2-tabs--container {
   display: none;
 }
 
 .sec-2-bt--p {
-  text-align: center;
-  width: 100%;
-  min-width: 370px;
+  margin: 0 auto;
+  width: 75%;
+  min-width: 500px;
   padding: 20px 0px;
   line-height: 2;
 }
