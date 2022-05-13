@@ -275,44 +275,44 @@ body {
 
 .sec-2-btn--container {
   justify-content: space-evenly;
-  margin-top: 60px;
+  margin-top: 100px;
   gap: 150px;
-  border-top: 1px solid rgba(128, 128, 128, 0.18);
+  border-top: 1px solid rgba(128, 128, 128, 0.242);
 }
 
 .sec-2-btn-tab {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   position: relative;
-  top: -27px;
+  top: -24px;
   color: rgb(6, 129, 63);
   border: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: -1.2px;
 }
 
 .sec-2--tabbed {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.242);
 }
 
 .btn-active {
   position: relative;
-  top: -37px;
+  top: -32px;
   color: #fff;
   background-color: rgb(6, 129, 63);
   border: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: -1.2px;
-  
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.sec-2-btn-tab:hover{
+.sec-2-btn-tab:hover {
   cursor: pointer;
-
 }
 
 .sec-2-tabs--container {
@@ -331,6 +331,7 @@ body {
 
 .sec-3 {
   padding: 0 50px 60px 50px;
+  margin-top: 60px;
   row-gap: 150px;
   grid-template-columns: 1fr 1fr;
 }

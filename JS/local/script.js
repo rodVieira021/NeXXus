@@ -82,14 +82,3 @@ btnUp.forEach((btn) => {
     targetBtn.classList.add("btn-active");
   });
 });
-
-const tabbedBtn = document.querySelectorAll('.sec-2-btn-tab"')
-
-tabbedBtn.forEach((btnT) => {
-  btnT.addEventListener("click", function (el) {
-    if (el.target.closest('.sec-2-btn-tab')) return;
-  });
-  tabbedBtn.classList.remove("btn-active");
-});
-
-// finalize clicks out of the button to reset
