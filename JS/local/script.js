@@ -2,12 +2,14 @@
 
 const btnLight = document.querySelector(".btn-light");
 const btnDark = document.querySelector(".btn-dark");
+const btnMenu = document.querySelector(".icon-btn");
 const navTrack = document.querySelector(".nav-header");
 const sliderMenu = document.querySelector(".slider-menu");
 const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".btn-close--m");
 const overlay = document.querySelector(".overlay");
 const navLinks = document.querySelectorAll(".nav-links");
+const navText = document.querySelectorAll("nav-links");
 
 btnLight.addEventListener("click", function () {
   btnLight.style.display = "none";
@@ -30,15 +32,20 @@ closeModal.addEventListener("click", function () {
   overlay.classList.add("hidden");
 });
 
-// NAVBAR color change/body blur //
+// NAVBAR color change/body blur   *//
 window.onscroll = () => {
-  if (window.scrollY >= 15) {
-    navTrack.style.backgroundColor = "#1f2121";
+  if (window.scrollY >= 400) {
+    navLinks.forEach((link) => (link.style.color = "#000"));
+    navTrack.classList.add("nav-down");
+    sliderMenu.style.color = "#000";
+    btnMenu.style.border = "1px solid #000";
+
     navTrack.style.transition = "0.5s";
   } else {
-    navTrack.style.backgroundColor = "#9391912b";
-    navTrack.style.backdropFilter = "blur(0px)";
-    navTrack.style.transition = "0.5s";
+    navLinks.forEach((link) => (link.style.color = "#efefef"));
+    navTrack.classList.remove("nav-down");
+    sliderMenu.style.color = "#efefef";
+    btnMenu.style.border = "1px solid transparent";
   }
 };
 
@@ -82,3 +89,6 @@ btnUp.forEach((btn) => {
     targetBtn.classList.add("btn-active");
   });
 });
+
+
+//fix smooth scroll in section 2 its covering the section first text line 
