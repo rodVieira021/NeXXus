@@ -39,8 +39,6 @@ window.onscroll = () => {
     navTrack.classList.add("nav-down");
     sliderMenu.style.color = "#000";
     btnMenu.style.border = "1px solid #000";
-
-    navTrack.style.transition = "0.5s";
   } else {
     navLinks.forEach((link) => (link.style.color = "#efefef"));
     navTrack.classList.remove("nav-down");
@@ -90,5 +88,26 @@ btnUp.forEach((btn) => {
   });
 });
 
+//fix smooth scroll in section 2 its covering the section first text line
 
-//fix smooth scroll in section 2 its covering the section first text line 
+//revelling section on scroll
+
+const allSection = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section-hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+allSection.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section-hidden");
+});

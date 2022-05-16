@@ -2,12 +2,6 @@ body {
   position: relative;
 }
 
-.sec-1,
-.sec-2,
-.sec-3 {
-  margin: 0 auto;
-  max-width: 1300px;
-}
 .nav-header {
   position: fixed;
   padding: 0 54px;
@@ -24,14 +18,12 @@ body {
 
 .nav-ul {
   gap: 25px;
-  
 }
 .nav-ul a {
   text-decoration: none;
   color: var(--text-color);
   border-bottom: 2px solid transparent;
   transition: 0.5s;
-  
 }
 
 .nav-ul a:hover {
@@ -107,6 +99,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  margin-bottom: 80px;
   background-image: url("/img/nav-hero2.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -153,20 +146,13 @@ body {
   color: #000;
 }
 .sec-1-tittle h2 {
-  padding-top: 35px;
   font-size: 20px;
   color: var(--main-color);
 }
 
 .sec-1-tittle h3 {
-  padding-top: 25px;
+  padding: 35px 0;
   font-size: 40px;
-}
-
-.features-container {
-  padding: 100px 50px;
-  column-gap: 50px;
-  row-gap: 50px;
 }
 
 .features-box h3 {
@@ -187,11 +173,6 @@ body {
 }
 
 /* SECTION 2 */
-.sec-2 {
-  padding: 60px 20px;
-  /* padding-top: 100px; */
-}
-
 .sec-02--text {
   justify-self: center;
 }
@@ -265,15 +246,15 @@ body {
 }
 
 .sec-2--bottom {
-  padding: 0px 20px 50px 20px;
-  margin-top: 10px;
+  padding: 0 20px;
+  margin-top: 0px;
   gap: 50px;
 }
 
 .sec-2-btn--container {
   justify-content: space-evenly;
   margin-top: 100px;
-  gap: 150px;
+  gap: 90px;
   border-top: 1px solid rgba(128, 128, 128, 0.242);
 }
 
@@ -320,15 +301,13 @@ body {
   margin: 0 auto;
   width: 75%;
   min-width: 500px;
-  padding: 20px 0px;
+  padding-bottom: 40px;
   line-height: 2;
 }
 
 /* SECTION 3 */
 
 .sec-3 {
-  padding: 0 50px 60px 50px;
-  margin-top: 60px;
   row-gap: 150px;
   grid-template-columns: 1fr 1fr;
 }
