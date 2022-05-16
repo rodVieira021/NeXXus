@@ -99,7 +99,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  margin-bottom: 80px;
+
   background-image: url("/img/nav-hero2.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -146,6 +146,7 @@ body {
   color: #000;
 }
 .sec-1-tittle h2 {
+  padding-top: 50px;
   font-size: 20px;
   color: var(--main-color);
 }
@@ -254,7 +255,7 @@ body {
 .sec-2-btn--container {
   justify-content: space-evenly;
   margin-top: 100px;
-  gap: 90px;
+  gap: 50px;
   border-top: 1px solid rgba(128, 128, 128, 0.242);
 }
 
