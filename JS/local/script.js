@@ -111,3 +111,24 @@ allSection.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
+
+////// intersect API
+
+// const section1 = document.querySelector('.nav-header')
+
+// const obsBack = function (entries) {
+//   entries.forEach((entry) => {
+//     console.log(entry);
+//     if (!entry.isIntersecting)
+//     navTrack.classList.add('sticky')
+//     else navTrack.classList.remove('sticky')
+//   });
+// };
+
+// const obsOpt = {
+//   root: null,
+//   threshold: '0',
+// };
+
+// const obsAll = new IntersectionObserver(obsBack, obsOpt);
+// obsAll.observe(section1);
