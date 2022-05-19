@@ -109,5 +109,40 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSection.forEach(function (section) {
   sectionObserver.observe(section);
-  section.classList.add("section-hidden");
+  // section.classList.add("section-hidden");
 });
+
+//slider component
+const slides = document.querySelectorAll(".slide");
+const btnRight = document.querySelector(".btn-slider--right");
+const btnLeft = document.querySelector(".btn-slider--left");
+const maxSlide = slides.length;
+let curSlide = 0;
+
+const slideGo = function (slide) {
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+slideGo(0);
+
+const nextSlide = function () {
+  if (curSlide === maxSlide - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  slideGo(curSlide);
+};
+
+const prevSlide = function () {
+  if (curSlide === 0) {
+    curSlide = maxSlide - 1;
+  } else {
+    curSlide--;
+  }
+  slideGo(curSlide);
+};
+
+btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", nextSlide);
