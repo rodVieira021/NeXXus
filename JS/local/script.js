@@ -145,4 +145,4 @@ const prevSlide = function () {
 };
 
 btnRight.addEventListener("click", nextSlide);
-btnLeft.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", prevSlide);
