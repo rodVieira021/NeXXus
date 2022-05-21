@@ -104,7 +104,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.02,
+  threshold: 0,
 });
 
 allSection.forEach(function (section) {
@@ -114,8 +114,8 @@ allSection.forEach(function (section) {
 
 //slider component
 const slides = document.querySelectorAll(".slide");
-const btnRight = document.querySelector(".btn-slider--right");
-const btnLeft = document.querySelector(".btn-slider--left");
+const btnLeft = document.querySelector(".btn-slider--right");
+const btnRight = document.querySelector(".btn-slider--left");
 const maxSlide = slides.length;
 let curSlide = 0;
 

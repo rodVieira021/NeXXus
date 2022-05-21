@@ -16,6 +16,10 @@ html {
   font-family: "inter", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .flex {
   display: flex;
 }
@@ -93,8 +97,10 @@ html {
 }
 
 .section {
-  margin: 0 100px 100px 100px;
-  transition: transform 1s, opacity 1s;
+  margin: 100px auto;
+  padding: 0 50px;
+  transition: transform 1s, opacity 1.5s;
+  max-width: 1444px;
 }
 
 .section-hidden {
