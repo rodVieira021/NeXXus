@@ -108,8 +108,8 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 });
 
 allSection.forEach(function (section) {
-  // sectionObserver.observe(section);
-  // section.classList.add("section-hidden");
+  sectionObserver.observe(section);
+  section.classList.add("section-hidden");
 });
 
 //slider component

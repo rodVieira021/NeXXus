@@ -379,7 +379,7 @@ body {
   gap: 10px;
 }
 
-.slider-top--text{
+.slider-top--text {
   padding: 0 150px;
 }
 
@@ -393,22 +393,45 @@ body {
   font-weight: 600;
 }
 
-.slider-inside--h2{
+.slider-inside--h2 {
   font-size: 35px;
   font-weight: 600;
   padding-bottom: 20px;
-  color: rgba(0, 0, 0, 0.774);
+  color: rgba(0, 0, 0, 0.849);
 }
-.slider-inside--p{
+.slider-inside--p {
   font-size: 20px;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.616);
+  line-height: 1.5;
+}
+
+.reviewer {
+  padding-top: 20px;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.review-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-name {
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.review-position {
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.616);
 }
 
 .slider {
-  background-color: rgba(128, 128, 128, 0.238);
   position: relative;
-  margin: 60px auto;
+  margin: 0 auto;
   width: 100%;
   height: 500px;
   overflow: hidden;
@@ -423,7 +446,7 @@ body {
 }
 .btn-slider:hover {
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(213, 213, 213);
   transition: 0.5s;
 }
 
@@ -431,7 +454,7 @@ body {
   position: absolute;
   top: 50%;
   left: 3%;
-  background-color: rgba(255, 255, 255, 0.379);
+  background-color: rgba(128, 128, 128, 0.141);
   font-size: 30px;
   padding: 10px;
   border-radius: 50%;
@@ -441,7 +464,7 @@ body {
   position: absolute;
   top: 50%;
   right: 3%;
-  background-color: rgba(255, 255, 255, 0.379);
+  background-color: rgba(128, 128, 128, 0.141);
   font-size: 30px;
   padding: 10px;
   border-radius: 50%;
