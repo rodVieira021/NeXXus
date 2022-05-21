@@ -93,7 +93,7 @@ html {
 }
 
 .section {
-  margin: 0 50px 60px 50px;
+  margin: 0 100px 100px 100px;
   transition: transform 1s, opacity 1s;
 }
 
