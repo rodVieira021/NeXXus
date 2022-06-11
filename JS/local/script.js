@@ -146,3 +146,5 @@ const prevSlide = function () {
 
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
+
+//FIX THE HREF'S FROM THE NAV THAT ARE LEADING TO THE MIDDLE OF THE SECTIONS
