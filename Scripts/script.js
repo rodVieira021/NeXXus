@@ -26,12 +26,10 @@ window.onscroll = () => {
     navLinks.forEach((link) => (link.style.color = "#000"));
     navTrack.classList.add("nav-down");
     sliderMenu.style.color = "#000";
-    btnMenu.style.border = "1px solid #000";
   } else {
     navLinks.forEach((link) => (link.style.color = "#efefef"));
     navTrack.classList.remove("nav-down");
     sliderMenu.style.color = "#efefef";
-    btnMenu.style.border = "1px solid transparent";
   }
 };
 
