@@ -1,7 +1,5 @@
 "use strict";
 
-const btnLight = document.querySelector(".btn-light");
-const btnDark = document.querySelector(".btn-dark");
 const btnMenu = document.querySelector(".icon-btn");
 const navTrack = document.querySelector(".nav-header");
 const sliderMenu = document.querySelector(".slider-menu");
@@ -10,16 +8,6 @@ const closeModal = document.querySelector(".btn-close--m");
 const overlay = document.querySelector(".overlay");
 const navLinks = document.querySelectorAll(".nav-links");
 const navText = document.querySelectorAll("nav-links");
-
-btnLight.addEventListener("click", function () {
-  btnLight.style.display = "none";
-  btnDark.style.display = "block";
-});
-
-btnDark.addEventListener("click", function () {
-  btnLight.style.display = "block";
-  btnDark.style.display = "none";
-});
 
 sliderMenu.addEventListener("click", function (e) {
   e.preventDefault();
@@ -90,7 +78,7 @@ btnUp.forEach((btn) => {
 
 //fix smooth scroll in section 2 its covering the section first text line
 
-//revelling section on scroll
+//revelling section on scroll obeserver API
 
 const allSection = document.querySelectorAll(".section");
 

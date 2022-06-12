@@ -56,15 +56,23 @@
   height: 350px;
   margin: 0 auto;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ul-modal > li {
   padding-bottom: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ul-modal > li:hover {
+  opacity: 0.5;
 }
 
 .btn-close--m {
   position: relative;
-  top: -390px;
+  top: -360px;
   right: -150px;
   border: 1px solid transparent;
   border-radius: 50%;
@@ -118,12 +126,6 @@
   color: var(--text-color);
   font-size: 50px;
   font-weight: 700;
-}
-
-.btn {
-  position: relative;
-  top: 0;
-  left: 25px;
 }
 
 .icon-btn {
